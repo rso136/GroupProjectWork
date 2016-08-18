@@ -30,7 +30,7 @@
 		
 		{{#each quests}}
 			{{#if @last}}
-		<input type="hidden" value={{this.playerID}} id="idSelect" name="playerID">
+		<input type="hidden" value={{this.playerID}} name="playerID">
 			{{/if}}
 		{{/each}}
 		<button id="submitBtn" class="btn btn-primary">Add Quest</button>
