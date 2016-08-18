@@ -28,11 +28,9 @@
 		<br>
 		<!--<input type="hidden" id="idSelect" name="playerID" value="2">-->
 		
-		{{#each quests}}
-			{{#if @last}}
-		<input type="hidden" value={{this.playerID}} name="playerID">
-			{{/if}}
-		{{/each}}
+
+		<input type="hidden" id="idSelect" value="{{playerId}}" name="playerID">
+
 		<button id="submitBtn" class="btn btn-primary">Add Quest</button>
 
 	</div>

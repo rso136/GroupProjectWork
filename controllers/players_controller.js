@@ -38,7 +38,7 @@ router.post('/quests/charcreate', function (req, res) {
 router.get('/quests', function (req, res) {
 	
 	player.leftJoin(pID, function (data) {
-		var hbsObject = { quests: data };
+		var hbsObject = { quests: data, playerID: pID };
 		console.log(hbsObject);
 		res.render('index', hbsObject);
 	})
